@@ -1,9 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-.page {
+:root {
   --main-font: Inter-Variable, Arial, sans-serif;
   --accent-font: PressStart2P, Arial, sans-serif;
-  --card-text-weight: 465;
-  --card-title-weight: 785;
+  --card-text-weight: 400;
+  --card-title-weight: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
 }
