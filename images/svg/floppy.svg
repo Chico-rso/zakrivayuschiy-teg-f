@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="floppy"
+fill="currentColor"
+>
+<rect y="0.5" width="3" height="3" fill="black"/>
+<rect y="3.5" width="3" height="3" fill="black"/>
+<rect y="6.5" width="3" height="3" fill="black"/>
+<rect y="9.5" width="3" height="3" fill="black"/>
+<rect y="12.5" width="3" height="3" fill="black"/>
+<rect y="15.5" width="3" height="3" fill="black"/>
+<rect y="18.5" width="3" height="3" fill="black"/>
+<rect y="21.5" width="3" height="3" fill="black"/>
+<rect y="24.5" width="3" height="3" fill="black"/>
+<rect y="27.5" width="3" height="3" fill="black"/>
+<rect y="30.5" width="3" height="3" fill="black"/>
+<rect y="33.5" width="3" height="3" fill="black"/>
+<rect y="36.5" width="3" height="3" fill="black"/>
+<rect x="33" y="0.5" width="3" height="3" transform="rotate(90 33 0.5)" fill="black"/>
+<rect x="30" y="0.5" width="3" height="3" transform="rotate(90 30 0.5)" fill="black"/>
+<rect x="27" y="0.5" width="3" height="3" transform="rotate(90 27 0.5)" fill="black"/>
+<rect x="24" y="0.5" width="3" height="3" transform="rotate(90 24 0.5)" fill="black"/>
+<rect x="21" y="0.5" width="3" height="3" transform="rotate(90 21 0.5)" fill="black"/>
+<rect x="18" y="0.5" width="3" height="3" transform="rotate(90 18 0.5)" fill="black"/>
+<rect x="15" y="0.5" width="3" height="3" transform="rotate(90 15 0.5)" fill="black"/>
+<rect x="12" y="0.5" width="3" height="3" transform="rotate(90 12 0.5)" fill="black"/>
+<rect x="9" y="0.5" width="3" height="3" transform="rotate(90 9 0.5)" fill="black"/>
+<rect x="6" y="0.5" width="3" height="3" transform="rotate(90 6 0.5)" fill="black"/>
+<rect x="36" y="3.5" width="3" height="3" transform="rotate(90 36 3.5)" fill="black"/>
+<rect x="9" y="6.5" width="3" height="3" transform="rotate(90 9 6.5)" fill="black"/>
+<rect x="9" y="3.5" width="3" height="3" transform="rotate(90 9 3.5)" fill="black"/>
+<rect x="9" y="9.5" width="3" height="3" transform="rotate(90 9 9.5)" fill="black"/>
+<rect x="30" y="6.5" width="3" height="3" transform="rotate(90 30 6.5)" fill="black"/>
+<rect x="30" y="3.5" width="3" height="3" transform="rotate(90 30 3.5)" fill="black"/>
+<rect x="30" y="9.5" width="3" height="3" transform="rotate(90 30 9.5)" fill="black"/>
+<rect x="24" y="6.5" width="3" height="3" transform="rotate(90 24 6.5)" fill="black"/>
+<rect x="24" y="3.5" width="3" height="3" transform="rotate(90 24 3.5)" fill="black"/>
+<rect x="24" y="9.5" width="3" height="3" transform="rotate(90 24 9.5)" fill="black"/>
+<rect x="30" y="12.5" width="3" height="3" transform="rotate(90 30 12.5)" fill="black"/>
+<rect x="27" y="12.5" width="3" height="3" transform="rotate(90 27 12.5)" fill="black"/>
+<rect x="24" y="12.5" width="3" height="3" transform="rotate(90 24 12.5)" fill="black"/>
+<rect x="21" y="12.5" width="3" height="3" transform="rotate(90 21 12.5)" fill="black"/>
+<rect x="18" y="12.5" width="3" height="3" transform="rotate(90 18 12.5)" fill="black"/>
+<rect x="15" y="12.5" width="3" height="3" transform="rotate(90 15 12.5)" fill="black"/>
+<rect x="12" y="12.5" width="3" height="3" transform="rotate(90 12 12.5)" fill="black"/>
+<rect x="9" y="12.5" width="3" height="3" transform="rotate(90 9 12.5)" fill="black"/>
+<rect x="33" y="21.5" width="3" height="3" transform="rotate(90 33 21.5)" fill="black"/>
+<rect x="30" y="21.5" width="3" height="3" transform="rotate(90 30 21.5)" fill="black"/>
+<rect x="27" y="21.5" width="3" height="3" transform="rotate(90 27 21.5)" fill="black"/>
+<rect x="24" y="21.5" width="3" height="3" transform="rotate(90 24 21.5)" fill="black"/>
+<rect x="21" y="21.5" width="3" height="3" transform="rotate(90 21 21.5)" fill="black"/>
+<rect x="18" y="21.5" width="3" height="3" transform="rotate(90 18 21.5)" fill="black"/>
+<rect x="15" y="21.5" width="3" height="3" transform="rotate(90 15 21.5)" fill="black"/>
+<rect x="12" y="21.5" width="3" height="3" transform="rotate(90 12 21.5)" fill="black"/>
+<rect x="9" y="21.5" width="3" height="3" transform="rotate(90 9 21.5)" fill="black"/>
+<rect x="33" y="24.5" width="3" height="3" transform="rotate(90 33 24.5)" fill="black"/>
+<rect x="9" y="24.5" width="3" height="3" transform="rotate(90 9 24.5)" fill="black"/>
+<rect x="33" y="27.5" width="3" height="3" transform="rotate(90 33 27.5)" fill="black"/>
+<rect x="9" y="27.5" width="3" height="3" transform="rotate(90 9 27.5)" fill="black"/>
+<rect x="33" y="30.5" width="3" height="3" transform="rotate(90 33 30.5)" fill="black"/>
+<rect x="9" y="30.5" width="3" height="3" transform="rotate(90 9 30.5)" fill="black"/>
+<rect x="9" y="33.5" width="3" height="3" transform="rotate(90 9 33.5)" fill="black"/>
+<rect x="33" y="33.5" width="3" height="3" transform="rotate(90 33 33.5)" fill="black"/>
+<rect x="36" y="36.5" width="3" height="3" transform="rotate(90 36 36.5)" fill="black"/>
+<rect x="33" y="36.5" width="3" height="3" transform="rotate(90 33 36.5)" fill="black"/>
+<rect x="30" y="36.5" width="3" height="3" transform="rotate(90 30 36.5)" fill="black"/>
+<rect x="27" y="36.5" width="3" height="3" transform="rotate(90 27 36.5)" fill="black"/>
+<rect x="24" y="36.5" width="3" height="3" transform="rotate(90 24 36.5)" fill="black"/>
+<rect x="21" y="36.5" width="3" height="3" transform="rotate(90 21 36.5)" fill="black"/>
+<rect x="18" y="36.5" width="3" height="3" transform="rotate(90 18 36.5)" fill="black"/>
+<rect x="15" y="36.5" width="3" height="3" transform="rotate(90 15 36.5)" fill="black"/>
+<rect x="12" y="36.5" width="3" height="3" transform="rotate(90 12 36.5)" fill="black"/>
+<rect x="9" y="36.5" width="3" height="3" transform="rotate(90 9 36.5)" fill="black"/>
+<rect x="6" y="36.5" width="3" height="3" transform="rotate(90 6 36.5)" fill="black"/>
+<rect x="39" y="39.5" width="3" height="3" transform="rotate(-180 39 39.5)" fill="black"/>
+<rect x="39" y="36.5" width="3" height="3" transform="rotate(-180 39 36.5)" fill="black"/>
+<rect x="39" y="33.5" width="3" height="3" transform="rotate(-180 39 33.5)" fill="black"/>
+<rect x="39" y="30.5" width="3" height="3" transform="rotate(-180 39 30.5)" fill="black"/>
+<rect x="39" y="27.5" width="3" height="3" transform="rotate(-180 39 27.5)" fill="black"/>
+<rect x="39" y="24.5" width="3" height="3" transform="rotate(-180 39 24.5)" fill="black"/>
+<rect x="39" y="21.5" width="3" height="3" transform="rotate(-180 39 21.5)" fill="black"/>
+<rect x="39" y="18.5" width="3" height="3" transform="rotate(-180 39 18.5)" fill="black"/>
+<rect x="39" y="15.5" width="3" height="3" transform="rotate(-180 39 15.5)" fill="black"/>
+<rect x="39" y="12.5" width="3" height="3" transform="rotate(-180 39 12.5)" fill="black"/>
+<rect x="39" y="9.5" width="3" height="3" transform="rotate(-180 39 9.5)" fill="black"/>
+</symbol>
+</svg>
