@@ -13,22 +13,72 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
+.container {
+  margin: 0 auto;
+  inline-size: var(--main-size);
+}
 
 .page {
-  margin: 0 auto;
   color: var(--accent-color);
   font-family: var(--main-font);
   background-color: var(--bg-color);
-  max-inline-size: 1440px;
+  background-image: var(--bg-image-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-variation-settings: 'wght' var(--main-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wght' var(--main-font-weight);
+}
 
-  @media (width > 768px) {
-    padding: 0 40px;
-  }
+.header {
+  margin-block-start: 100px;
+  border: 2px solid var(--accent-color);
+  padding-block-start: clamp(120px, calc(54/182 * 100%), 136px);
+  padding-block-end: 18px;
+  background-color: var(--bg-color);
+}
 
-  @media (width >=1440px) {
-    padding: 0 370px;
-  }
+.header__content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+  font-family: var(--accent-font);
+  font-weight: var(--accent-font-weight);
+}
+
+.header__logo {
+  font-size: var(--header-logo-font-size);
+  line-height: 49px;
+  margin-block-end: 20px;
+  text-decoration: none;
+}
+
+.header__title {
+  font-size: var(--header-title-font-size);
+  margin-block-end: 25px;
+  text-transform: uppercase;
+}
+
+.header__theme-menu {
+  padding-left: 21px;
+}
+
+.theme-menu__list {
+  text-align: left;
+}
+
+.theme-menu__item:not(:last-child) {
+  margin-block-end: 14px;
+}
+
+.theme-menu__button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0;
+  text-transform: uppercase;
 }

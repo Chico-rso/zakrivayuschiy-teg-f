@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: Inter-Variable, Arial, sans-serif;
-  --accent-font: PressStart2P, Arial, sans-serif;
+  --main-font: "Inter-Variable", Arial, sans-serif;
+  --accent-font: "PressStart2P-Regular", Arial, sans-serif;
   --main-font-weight: 400;
   --accent-font-weight: 700;
   --bg-color: #ffffff;
@@ -9,4 +9,7 @@
   --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
     repeating-linear-gradient(#d3d3d3, transparent 2px),
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --main-size: clamp(376px, calc(696/1440 * 100%), 696px);
+  --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
