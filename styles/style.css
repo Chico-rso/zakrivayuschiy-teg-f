@@ -36,7 +36,7 @@
   margin-block-start: 100px;
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(120px, calc(54/182 * 100%), 136px);
-  padding-block-end: 18px;
+  padding-block-end: 19px;
   background-color: var(--bg-color);
 }
 
@@ -54,6 +54,10 @@
   line-height: 49px;
   margin-block-end: 20px;
   text-decoration: none;
+}
+
+.header__logo:focus-visible {
+  outline: none;
 }
 
 .header__title {
@@ -76,9 +80,38 @@
 
 .theme-menu__button {
   background-color: transparent;
+  position: relative;
   border: none;
   font-size: 14px;
   line-height: 14px;
   padding: 0;
   text-transform: uppercase;
+  transition: opacity .3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  display: block;
+  block-size: 14px;
+  inline-size: 14px;
+  position: absolute;
+  inset-inline-start: -20px;
+  color: var(--accent-color);
 }
