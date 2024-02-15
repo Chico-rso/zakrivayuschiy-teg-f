@@ -92,15 +92,16 @@
 .theme-menu__button::after {
   content: '';
   display: block;
-  height: 2px;
-  margin-top: 2px;
+  position: absolute;
+  inset-block-end: -3px;
+  block-size: 2px;
   background-color: var(--accent-color);
-  width: 0%;
-  transition: width 0.3s;
+  inline-size: 0;
+  transition: inline-size .3s ease;
 }
 
 .theme-menu__button:focus::after {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .theme-menu__button:hover {
@@ -128,4 +129,5 @@
   position: absolute;
   inset-inline-start: -20px;
   color: var(--accent-color);
+  animation: move 0.5s infinite ease-in-out alternate;
 }
