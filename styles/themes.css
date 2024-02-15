@@ -9,6 +9,10 @@
   --accent-color: #00CC14;
   --card-text-weight: 465;
   --card-title-weight: 785;
+  --bg-image-color: repeating-linear-gradient(90deg, #000, transparent 2px),
+    repeating-linear-gradient(#000, transparent 2px),
+    repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
+
 }
 
 .root.theme-light {
@@ -16,6 +20,9 @@
   --accent-color: #000000;
   --card-text-weight: 400;
   --card-title-weight: 700;
+  --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,5 +31,8 @@
     --accent-color: #00CC14;
     --card-text-weight: 465;
     --card-title-weight: 785;
+    --bg-image-color: repeating-linear-gradient(90deg, #000, transparent 2px),
+      repeating-linear-gradient(#000, transparent 2px),
+      repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
   }
 }

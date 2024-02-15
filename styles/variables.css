@@ -2,8 +2,11 @@
 :root {
   --main-font: Inter-Variable, Arial, sans-serif;
   --accent-font: PressStart2P, Arial, sans-serif;
-  --card-text-weight: 400;
-  --card-title-weight: 700;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
+  --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(#d3d3d3, transparent 2px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
 }
