@@ -372,12 +372,24 @@
         </article>
       </section>
       <section class="section-content save container">
-        <button class="save__button">
+        <button class="save__button" onclick="window.dialogSave.showModal()">
           <svg viewBox="0 0 39 39" width="28" height="28" class="save__icon">
             <use href="./svg/floppy.svg#floppy">
           </svg>
           <span>Сохранить на память</span>
         </button>
+        <dialog id="dialogSave">
+          <div class="dialog-save__wrapper">
+            <div class="dialog-save__content">
+              <svg viewBox="0 0 39 39" width="28" height="28" class="save__icon">
+                <use href="./svg/floppy.svg#floppy">
+              </svg>
+              <p class="dialog-save__text">Вставьте
+                дискету, чтобы продолжить</p>
+            </div>
+            <button class="dialog-save__button" onclick="window.dialogSave.close()">ок</button>
+          </div>
+        </dialog>
       </section>
     </main>
     <script src="./scripts/like.js"></script>
