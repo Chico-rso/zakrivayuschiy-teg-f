@@ -52,7 +52,6 @@
 
 .header__logo {
   font-size: var(--header-logo-font-size);
-  line-height: 49px;
   margin-block-end: 20px;
   text-decoration: none;
 }
@@ -84,7 +83,6 @@
   position: relative;
   border: none;
   font-size: 14px;
-  line-height: 14px;
   padding: 0;
   text-transform: uppercase;
   transition: opacity .3s ease;
@@ -130,12 +128,18 @@
   position: absolute;
   inset-inline-start: -20px;
   color: var(--accent-color);
-  animation: move 0.5s infinite ease-in-out alternate;
+  animation: arrow-move 0.5s infinite ease-in-out alternate;
 }
 
 .section-content {
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
 
 .card__title {
