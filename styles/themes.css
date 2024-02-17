@@ -9,19 +9,23 @@
   --accent-color: #000000;
   --card-text-weight: 400;
   --card-title-weight: 700;
+  --label-color: rgba(255, 255, 255, 0.5);
   --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
     repeating-linear-gradient(#d3d3d3, transparent 2px),
     repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --like-btn-color: #fff;
 }
 
 .root.theme-dark {
   --bg-color: #000000;
   --accent-color: #00CC14;
+  --label-color: rgba(0, 0, 0, 0.5);
   --card-text-weight: 465;
   --card-title-weight: 785;
   --bg-image-color: repeating-linear-gradient(90deg, #000, transparent 2px),
     repeating-linear-gradient(#000, transparent 2px),
     repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
+  --like-btn-color: #00cc14;
 
 }
 
@@ -31,8 +35,24 @@
     --accent-color: #00CC14;
     --card-text-weight: 465;
     --card-title-weight: 785;
+    --label-color: rgba(0, 0, 0, 0.5);
     --bg-image-color: repeating-linear-gradient(90deg, #000, transparent 2px),
       repeating-linear-gradient(#000, transparent 2px),
       repeating-linear-gradient(#007f0c 0.01%, #004306 100%);
+    --like-btn-color: #00cc14;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffffff;
+    --accent-color: #000000;
+    --card-text-weight: 400;
+    --card-title-weight: 700;
+    --label-color: rgba(255, 255, 255, 0.5);
+    --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
+      repeating-linear-gradient(#d3d3d3, transparent 2px),
+      repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+    --like-btn-color: #fff;
   }
 }

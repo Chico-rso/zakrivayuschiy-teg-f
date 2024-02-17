@@ -12,4 +12,6 @@
   --main-size: clamp(376px, calc(696/1440 * 100%), 696px);
   --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --label-color: rgba(255, 255, 255, 0.5);
+  --like-btn-color: #fff;
 }
