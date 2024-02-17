@@ -189,6 +189,26 @@
   aspect-ratio: 1/1;
 }
 
+.image-saturate {
+  filter: saturate(0.3);
+}
+
+.image-saturate-second {
+  filter: saturate(3);
+}
+
+.image-hue {
+  filter: hue-rotate(35deg);
+}
+
+.image-invert {
+  filter: invert(0.8);
+}
+
+.image-saturate-third {
+  filter: saturate(.9);
+}
+
 .card__content {
   padding: 25px;
 }
@@ -208,7 +228,6 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
 }
 
 .card__like-button {
