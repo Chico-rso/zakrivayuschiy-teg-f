@@ -205,8 +205,16 @@
   filter: invert(0.8);
 }
 
-.image-saturate-third {
-  filter: saturate(.9);
+.image-sepia {
+  filter: sepia(91.3%);
+}
+
+.image-blur {
+  filter: blur(10px);
+}
+
+.image-hue-rotate {
+  filter: saturate(110%) brightness(0.5);
 }
 
 .card__content {
@@ -267,7 +275,7 @@
 
 .button__text {
   position: relative;
-  color: var(--animation-btn-color);
+  color: var(--like-btn-color);
   mix-blend-mode: difference;
 }
 
