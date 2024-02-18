@@ -383,12 +383,6 @@ dialog::backdrop {
   margin-block-end: 30px;
 }
 
-.dialog__svg {
-  display: inline-block;
-  inline-size: 39px;
-  block-size: 39px;
-}
-
 .save__icon {
   position: relative;
   z-index: 1;
@@ -396,6 +390,13 @@ dialog::backdrop {
   color: var(--accent-color, #000000);
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
+}
+
+.dialog__svg {
+  display: inline-block;
+  inline-size: 39px;
+  block-size: 39px;
+  color: var(--accent-color, #000000);
 }
 
 .dialog-save__text {
