@@ -313,6 +313,7 @@
 }
 
 .save.container {
+  inline-size: clamp(306px, 18.4868rem + 2.723vw, 335px);
   max-inline-size: 335px;
 }
 
@@ -322,7 +323,7 @@
 
 .save__button {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -336,9 +337,13 @@
   inline-size: 100%;
 
   @media (width <=375px) {
-    flex-direction: row;
-    padding: 18px 20px;
+    flex-direction: column;
+    padding: 15px 20px;
   }
+}
+
+.save__button span {
+  text-wrap: nowrap;
 }
 
 dialog {
@@ -364,6 +369,21 @@ dialog::backdrop {
   margin-block-end: 30px;
 }
 
+.dialog__svg {
+  display: inline-block;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.save__icon {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  color: var(--accent-color, #000000);
+  inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
+  block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
+}
+
 .dialog-save__text {
   color: var(--accent-color, #000000);
   font-family: var(--accent-font);
@@ -381,8 +401,4 @@ dialog::backdrop {
   background-color: var(--bg-color, #ffffff);
   cursor: pointer;
   inline-size: 100%;
-}
-
-.save__icon {
-  color: var(--accent-color, #000000);
 }
