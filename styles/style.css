@@ -145,10 +145,10 @@
 }
 
 .card__title {
-  padding: 4px 10px 6px;
+  padding: 4px 10px 4px;
   color: var(--accent-color);
   font-size: 18px;
-  font-variation-settings: 'wght' 785;
+  font-variation-settings: 'wght' var(--card-title-weight);
 }
 
 .card__image {
@@ -214,7 +214,7 @@
 }
 
 .image-hue-rotate {
-  filter: saturate(110%) brightness(0.5);
+  filter: hue-rotate(90deg) contrast(0.5) brightness(100%);
 }
 
 .card__content {
@@ -241,7 +241,7 @@
 .card__like-button {
   position: relative;
   border: 2px solid var(--accent-color);
-  padding: 10px 37px;
+  padding: 10px 35px;
   box-shadow: 0 0 0 var(--accent-color);
   overflow: hidden;
   font-family: var(--accent-font);
