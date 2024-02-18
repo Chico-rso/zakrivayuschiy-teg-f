@@ -6,20 +6,104 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-@keyframes arrow-move {
 
-  0% {
-    transform: translateX(0px);
+@keyframes arrow-move {
+  from {
+    transform: translateX(0);
   }
 
-  100% {
+  to {
     transform: translateX(4px);
   }
+}
+
+@keyframes like-scale {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes like-sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.contour {
+  fill: var(--accent-color, #000000);
+  transition: fill 0.1s ease;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s ease;
+}
+
+.sparks {
+  fill: #f00000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color, #000000);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--accent-color, #000000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: #f00000;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: #f00000;
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked {
+  transform-origin: center;
+  animation: like-scale 2 0.3s 0.1s ease-in backwards alternate;
+}
+
+.like-icon.is-liked .contour {
+  fill: #f00000;
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: #f00000;
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: #f00000;
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .sparks {
+  animation: like-sparks 2 0.3s 0.3s ease-in backwards alternate;
 }

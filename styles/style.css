@@ -19,15 +19,15 @@
 }
 
 .page {
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   font-family: var(--main-font);
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #ffffff);
   background-image: var(--bg-image-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: 'wght' var(--main-font-weight);
+  font-variation-settings: 'wght' var(--main-font-weight, 400);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -35,10 +35,10 @@
 .header {
   margin-block-start: 100px;
   margin-block-end: 100px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000000);
   padding-block-start: clamp(120px, calc(54/182 * 100%), 136px);
   padding-block-end: 19px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #ffffff);
 }
 
 .header__content {
@@ -96,7 +96,7 @@
   content: '';
   position: absolute;
   display: block;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #000000);
   transition: inline-size .3s ease;
   inset-block-end: -3px;
   block-size: 2px;
@@ -126,7 +126,7 @@
   content: '▶';
   position: absolute;
   display: block;
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   animation: arrow-move 0.5s infinite ease-in-out alternate;
   block-size: 14px;
   inline-size: 14px;
@@ -134,8 +134,8 @@
 }
 
 .section-content {
-  border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color, #000000);
+  background-color: var(--bg-color, #ffffff);
 }
 
 .main {
@@ -146,15 +146,15 @@
 
 .card__title {
   padding: 4px 10px 4px;
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   font-size: 18px;
   font-variation-settings: 'wght' var(--card-title-weight);
 }
 
 .card__image {
   position: relative;
-  border-block-start: 2px solid var(--accent-color);
-  border-block-end: 2px solid var(--accent-color);
+  border-block-start: 2px solid var(--accent-color, #000000);
+  border-block-end: 2px solid var(--accent-color, #000000);
 }
 
 .card__image-label {
@@ -240,13 +240,13 @@
 
 .card__like-button {
   position: relative;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000000);
   padding: 10px 35px;
-  box-shadow: 0 0 0 var(--accent-color);
+  box-shadow: 0 0 0 var(--accent-color, #000000);
   overflow: hidden;
   font-family: var(--accent-font);
   font-size: 14px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #ffffff);
   transition: box-shadow .3s ease;
   cursor: pointer;
 }
@@ -256,14 +256,14 @@
 }
 
 .card__like-button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);
+  box-shadow: 2px 2px 0 var(--accent-color, #000000);
 }
 
 .card__like-button::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #000000);
   transition: inline-size 0.5s ease-in-out;
   block-size: 100%;
   inline-size: 0;
@@ -304,7 +304,7 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color, #000000);
 }
 
 .like-icon {
@@ -328,10 +328,10 @@
   gap: 8px;
   border: none;
   padding: 15px 20px;
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   font-family: var(--accent-font);
   font-size: 14px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #ffffff);
   cursor: pointer;
   inline-size: 100%;
 
@@ -342,14 +342,19 @@
 }
 
 dialog {
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000000);
   padding: 0;
-  background-color: var(--bg-color);
-  max-inline-size: 353px;
+  background-color: var(--bg-color, #ffffff);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .dialog-save__wrapper {
   padding: 30px 42px;
+  max-inline-size: 353px;
+  inline-size: 100%;
 }
 
 .dialog-save__content {
@@ -360,24 +365,24 @@ dialog {
 }
 
 .dialog-save__text {
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 150%;
 }
 
 .dialog-save__button {
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000000);
   padding: 12.5px 0;
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #ffffff);
   cursor: pointer;
   inline-size: 100%;
 }
 
 .save__icon {
-  color: var(--accent-color);
+  color: var(--accent-color, #000000);
 }
