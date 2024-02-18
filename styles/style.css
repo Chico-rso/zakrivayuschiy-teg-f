@@ -330,11 +330,13 @@
   border: none;
   padding: 15px 20px;
   color: var(--accent-color, #000000);
+  box-shadow: 0 0 0 var(--accent-color, #000000);
   font-family: var(--accent-font);
   font-size: 14px;
   background-color: var(--bg-color, #ffffff);
   cursor: pointer;
   inline-size: 100%;
+  transition: box-shadow, transform .3s ease;
 
   @media (width <=375px) {
     flex-direction: column;
@@ -344,6 +346,18 @@
 
 .save__button span {
   text-wrap: nowrap;
+}
+
+.save__button:focus {
+  outline: none;
+}
+
+.save__button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color, #000000);
+}
+
+.save__button:hover {
+  transform: scale(0.9);
 }
 
 dialog {
@@ -401,4 +415,17 @@ dialog::backdrop {
   background-color: var(--bg-color, #ffffff);
   cursor: pointer;
   inline-size: 100%;
+  transition: scale .3s ease;
+}
+
+.dialog-save__button:focus {
+  outline: none;
+}
+
+.dialog-save__button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color, #000000);
+}
+
+.dialog-save__button:hover {
+  scale: 0.9;
 }
