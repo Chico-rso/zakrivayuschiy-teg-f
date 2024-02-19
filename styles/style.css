@@ -337,10 +337,9 @@
   gap: 8px;
   border: none;
   padding: 15px 20px;
+  background-color: var(--bg-color, #ffffff);
   inline-size: 100%;
   border: 2px solid var(--accent-color, #000000);
-  background-color: var(--bg-color, #ffffff);
-
 }
 
 @media (width <=375px) {
@@ -380,17 +379,17 @@ dialog::backdrop {
   position: relative;
   z-index: 1;
   display: inline-block;
+  color: var(--like-btn-color, #ffffff);
   min-inline-size: 21px;
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   mix-blend-mode: difference;
-  color: var(--like-btn-color, #ffffff);
 }
 
 .dialog__svg {
+  color: var(--accent-color, #000000);
   min-inline-size: 39px;
   block-size: 39px;
-  color: var(--accent-color, #000000);
 }
 
 .dialog-save__text {
