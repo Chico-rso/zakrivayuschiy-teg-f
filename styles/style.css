@@ -179,6 +179,7 @@
   inset-block-start: 0;
   inset-inline-end: 0;
   mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 @supports((text-stroke: 1px var(--label-color)) or (text-stroke: 1px var(--label-color))) {
@@ -395,7 +396,7 @@ dialog::backdrop {
 .dialog-save__text {
   color: var(--accent-color, #000000);
   font-family: var(--accent-font);
-  font-size: 14px;
+  font-size: 13px;
   line-height: 150%;
 }
 
