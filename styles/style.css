@@ -340,9 +340,11 @@
   border: 2px solid var(--accent-color, #000000);
   background-color: var(--bg-color, #ffffff);
 
-  @media (width <=375px) {
+}
+
+@media (width <=375px) {
+  .save__button {
     flex-direction: column;
-    padding: 15px 20px;
   }
 }
 
@@ -377,10 +379,10 @@ dialog::backdrop {
   position: relative;
   z-index: 1;
   display: inline-block;
-  fill: var(--like-btn-color, #ffffff);
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   mix-blend-mode: difference;
+  color: var(--like-btn-color, #ffffff);
 }
 
 .dialog__svg {
