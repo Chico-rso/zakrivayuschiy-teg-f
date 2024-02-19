@@ -91,6 +91,7 @@
   text-transform: uppercase;
   background-color: transparent;
   transition: opacity .3s ease;
+  cursor: pointer;
 }
 
 .theme-menu__button::after {
