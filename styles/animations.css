@@ -45,23 +45,22 @@
 
 .contour {
   fill: var(--accent-color, #000000);
-  transition: fill 0.1s ease;
+  transition: fill 0.1s linear;
 }
 
 .main-body {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .core {
   fill: transparent;
-  transition: fill 0.3s 0.03s ease;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .sparks {
   fill: #f00000;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
 }
 
 .like-icon:hover .main-body {
@@ -86,7 +85,8 @@
 
 .like-icon.is-liked {
   transform-origin: center;
-  animation: like-scale 2 0.3s 0.1s ease-in backwards alternate;
+  animation: like-scale 2 0.3s 0.1s ease-in alternate;
+  animation-iteration-count: 1;
 }
 
 .like-icon.is-liked .contour {
@@ -105,5 +105,6 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: like-sparks 2 0.3s 0.3s ease-in backwards alternate;
+  animation: like-sparks 2 0.3s 0.3s ease-in alternate;
+  animation-iteration-count: 1;
 }
