@@ -54,6 +54,7 @@
   margin-block-end: 20px;
   font-size: var(--header-logo-font-size);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__logo:focus-visible {
@@ -99,6 +100,7 @@
   background-color: var(--accent-color, #000000);
   transition: inline-size .3s ease;
   inset-block-end: -3px;
+  inset-inline-start: 0;
   block-size: 2px;
   inline-size: 0;
 }
@@ -111,9 +113,11 @@
   opacity: 0.6;
 }
 
+.theme-menu__button:focus {
+  outline: none;
+}
 
 .theme-menu__button:focus-visible {
-  outline: none;
   opacity: 0.6;
 }
 
@@ -131,17 +135,20 @@
   block-size: 14px;
   inline-size: 14px;
   inset-inline-start: -20px;
+  inset-block-start: 0;
 }
 
 .section-content {
-  border: 2px solid var(--accent-color, #000000);
-  background-color: var(--bg-color, #ffffff);
-}
-
-.main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-columns: 1fr;
   gap: 50px;
+  margin-block-end: 50px;
+}
+
+.card {
+  border: 2px solid var(--accent-color, #000000);
+  background-color: var(--bg-color, #ffffff);
 }
 
 .card__title {
@@ -225,10 +232,10 @@
   margin-block-end: 25px;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: 'wght' 465;
+  font-variation-settings: 'wght' var(--card-text-weight);
 }
 
-.card__text-one {
+.card__text-top {
   margin-block-end: 27px;
 }
 
@@ -238,7 +245,7 @@
   align-items: center;
 }
 
-.card__like-button {
+.button {
   position: relative;
   border: 2px solid var(--accent-color, #000000);
   padding: 10px 35px;
@@ -251,15 +258,15 @@
   cursor: pointer;
 }
 
-.card__like-button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color, #000000);
 }
 
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -269,7 +276,7 @@
   inline-size: 0;
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   inline-size: 100%;
 }
 
@@ -280,7 +287,7 @@
 }
 
 .card__icon-button,
-.card__like-button {
+.button {
   cursor: pointer;
 }
 
@@ -329,14 +336,9 @@
   gap: 8px;
   border: none;
   padding: 15px 20px;
-  color: var(--accent-color, #000000);
-  box-shadow: 0 0 0 var(--accent-color, #000000);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  background-color: var(--bg-color, #ffffff);
-  cursor: pointer;
   inline-size: 100%;
-  transition: box-shadow, transform .3s ease;
+  border: 2px solid var(--accent-color, #000000);
+  background-color: var(--bg-color, #ffffff);
 
   @media (width <=375px) {
     flex-direction: column;
@@ -346,18 +348,6 @@
 
 .save__button span {
   text-wrap: nowrap;
-}
-
-.save__button:focus {
-  outline: none;
-}
-
-.save__button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color, #000000);
-}
-
-.save__button:hover {
-  transform: scale(0.9);
 }
 
 dialog {
@@ -387,13 +377,13 @@ dialog::backdrop {
   position: relative;
   z-index: 1;
   display: inline-block;
-  color: var(--accent-color, #000000);
+  fill: var(--like-btn-color, #ffffff);
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
+  mix-blend-mode: difference;
 }
 
 .dialog__svg {
-  display: inline-block;
   inline-size: 39px;
   block-size: 39px;
   color: var(--accent-color, #000000);
@@ -407,26 +397,5 @@ dialog::backdrop {
 }
 
 .dialog-save__button {
-  border: 2px solid var(--accent-color, #000000);
-  padding: 12.5px 0;
-  color: var(--accent-color, #000000);
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 90%;
-  background-color: var(--bg-color, #ffffff);
-  cursor: pointer;
   inline-size: 100%;
-  transition: scale .3s ease;
-}
-
-.dialog-save__button:focus {
-  outline: none;
-}
-
-.dialog-save__button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color, #000000);
-}
-
-.dialog-save__button:hover {
-  scale: 0.9;
 }
