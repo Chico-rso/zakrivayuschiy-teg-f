@@ -380,6 +380,7 @@ dialog::backdrop {
   position: relative;
   z-index: 1;
   display: inline-block;
+  min-inline-size: 21px;
   inline-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   block-size: clamp(21px, 1.905rem + -0.6573vw, 28px);
   mix-blend-mode: difference;
@@ -387,7 +388,7 @@ dialog::backdrop {
 }
 
 .dialog__svg {
-  inline-size: 39px;
+  min-inline-size: 39px;
   block-size: 39px;
   color: var(--accent-color, #000000);
 }
