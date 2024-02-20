@@ -237,7 +237,7 @@
   font-variation-settings: 'wght' var(--card-text-weight);
 }
 
-.card__text-top {
+.card__text-paragraph:not(:last-child) {
   margin-block-end: 27px;
 }
 
