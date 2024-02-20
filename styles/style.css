@@ -85,6 +85,7 @@
 
 .theme-menu__button {
   position: relative;
+  top: -4px;
   border: none;
   padding: 0;
   font-size: 14px;
