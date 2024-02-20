@@ -406,8 +406,10 @@ dialog::backdrop {
   font-family: var(--accent-font);
   font-size: 13px;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 .dialog-save__button {
   inline-size: 100%;
+  text-transform: uppercase;
 }
