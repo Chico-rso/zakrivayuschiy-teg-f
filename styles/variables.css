@@ -6,9 +6,12 @@
   --accent-font-weight: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
-  --bg-image-color: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, transparent 2px),
-    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --color-gradient-repeating: #d3d3d3;
+  --color-gradient-top: #e7e7e7;
+  --color-gradient-bottom: #1a1a1a;
+  --bg-image-color: repeating-linear-gradient(var(--color-gradient-repeating) 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, var(--color-gradient-repeating) 0 2px, transparent 2px 4px),
+    linear-gradient(var(--color-gradient-top) 0.01%, var(--color-gradient-bottom));
   --main-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
