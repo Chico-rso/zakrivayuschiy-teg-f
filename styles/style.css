@@ -238,7 +238,7 @@
 }
 
 .card__text-paragraph:not(:last-child) {
-  margin-block-end: 27px;
+  margin-block-end: 25px;
 }
 
 .card__buttons {
