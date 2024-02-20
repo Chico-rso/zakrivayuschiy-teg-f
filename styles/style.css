@@ -282,8 +282,16 @@
   inline-size: 100%;
 }
 
+.card__like-button {
+  justify-content: center;
+  min-inline-size: 130px;
+  padding: 12px 0;
+}
+
 .button__text {
   position: relative;
+  z-index: 1;
+  display: block;
   color: var(--like-btn-color);
   mix-blend-mode: difference;
 }
