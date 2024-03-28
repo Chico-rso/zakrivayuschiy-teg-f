@@ -290,5 +290,13 @@
 		</article>
 	</section>
 </main>
+<script type="text/javascript">
+	ymab('metrika.96874603', 'getFlags', function (flags){
+	const cards = document.querySelectorAll('.card');
+	cards.forEach((cardItem)=>{
+		cardItem.classList.contains('card-ab') ? cardItem.style.display = flags.show : cardItem.style.display = flags.hide;
+	})
+})
+</script>
 </body>
 </html>
