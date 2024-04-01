@@ -126,7 +126,7 @@
             </div>
           </div>
         </article>
-		<article class="card card-ab">
+        <article class="card card-ab">
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка к работе ababab
           </h2>
@@ -194,7 +194,7 @@
             </div>
           </div>
         </article>
-		<article class="card">
+        <article class="card" style="display: none">
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
@@ -780,35 +780,77 @@
       </section>
     </main>
     <script src="./scripts/like.js"></script>
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-   ym(96874603, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/96874603" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-  <!-- Varioqub experiments -->
-<script type="text/javascript">
-(function(e, x, pe, r, i, me, nt){
-e[i]=e[i]||function(){(e[i].a=e[i].a||[]).push(arguments)},
-me=x.createElement(pe),me.async=1,me.src=r,nt=x.getElementsByTagName(pe)[0],nt.parentNode.insertBefore(me,nt)})
-(window, document, 'script', 'https://abt.s3.yandex.net/expjs/latest/exp.js', 'ymab');
-ymab('metrika.96874603', 'init'/*, {clientFeatures}, {callback}*/);
-ymab('metrika.96874603', 'getFlags', function (flags){
-	const cards = document.querySelectorAll('.card');
-	cards.forEach((cardItem)=>{
-		cardItem.classList.contains('card-ab') ? cardItem.style.display = flags.show : cardItem.style.display = flags.hide;
-	})
-})
-</script>
+      ym(96874603, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/96874603"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Varioqub experiments -->
+    <script type="text/javascript">
+      (function (e, x, pe, r, i, me, nt) {
+        (e[i] =
+          e[i] ||
+          function () {
+            (e[i].a = e[i].a || []).push(arguments);
+          }),
+          (me = x.createElement(pe)),
+          (me.async = 1),
+          (me.src = r),
+          (nt = x.getElementsByTagName(pe)[0]),
+          nt.parentNode.insertBefore(me, nt);
+      })(
+        window,
+        document,
+        "script",
+        "https://abt.s3.yandex.net/expjs/latest/exp.js",
+        "ymab"
+      );
+      ymab("metrika.96874603", "init" /*, {clientFeatures}, {callback}*/);
+      ymab("metrika.96874603", "getFlags", function (flags) {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((cardItem) => {
+          cardItem.classList.contains("card-ab")
+            ? (cardItem.style.display = flags.show)
+            : (cardItem.style.display = flags.hide);
+        });
+      });
+    </script>
   </body>
 </html>
