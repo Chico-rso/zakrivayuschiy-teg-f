@@ -844,11 +844,14 @@
       );
       ymab("metrika.96874603", "init" /*, {clientFeatures}, {callback}*/);
       ymab("metrika.96874603", "getFlags", function (flags) {
-        const cards = document.querySelectorAll(".card");
-        cards.forEach((cardItem) => {
-          cardItem.classList.contains("card-ab")
-            ? (cardItem.style.display = flags.show)
-            : (cardItem.style.display = flags.hide);
+        const cardsOld = document.querySelectorAll(".card");
+        const cardsNew = document.querySelectorAll(".card-ab");
+
+        cardsOld.forEach((card) => {
+          card.style.display = flags.hide;
+        });
+        cardsNew.forEach((card) => {
+          card.style.display = flags.show;
         });
       });
     </script>
